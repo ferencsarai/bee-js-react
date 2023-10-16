@@ -43,12 +43,13 @@ function App() {
 
   const refList = references.map((ref) => (
     <li>
-      <img width='32' src={`http://localhost:1633/bzz/${ref}/`}/>
+      <img alt="uploaded" width='32' src={`http://localhost:1633/bzz/${ref}/`}/>
       <br/>
-      <div style={{ fontSize: '50%' }}>{ref}</div>
+      <a target="_new" href={`http://localhost:1633/bzz/${ref}/`}>{ref}</a>
       <hr/>
     </li>
   ));
+
   return (
     <div>
       <h1>Upload to Swarm</h1>
