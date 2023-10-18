@@ -57,7 +57,7 @@ function App() {
       <br/>
       <form onSubmit={handleFileSubmit}>
         <input type='file' name='file' onChange={handleFileChange}></input>
-        <button type='submit'>Submit</button>
+        {uploadFile && <button type='submit'>Submit</button>}
       </form>
       <ol>{refList}</ol>
     </div>
