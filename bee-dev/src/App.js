@@ -29,10 +29,8 @@ function App() {
     const data = await read(uploadFile)
     const dataArray = new Uint8Array(data)
     const uploadRes = await bee.uploadFile(batchId, dataArray, uploadFile.name, {contentType: uploadFile.type})
-    const newReferences = references.slice();
-    newReferences.push(uploadRes.reference);
+    const newReferences = [...references, uploadRes.reference];
     setReferences(newReferences);
-    //const downloadedFile = await bee.downloadFile(uploadRes.reference)
   }
 
   const handleFileChange = async (e) => {

@@ -14,4 +14,4 @@ RUN cd /tmp && alien -d bee.rpm && \
 #RUN cd bee-dev
 
 
-EXPOSE 1633 1635 3000
+#EXPOSE 1633 1635 3000

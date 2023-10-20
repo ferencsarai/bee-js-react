@@ -12,7 +12,7 @@ bee dev --cors-allowed-origins="*"
 ## Buy stamp with swarm-cli
 
 ```bash
-swarm-cli stamp buy --depth 18 --amount 1000m
+swarm-cli stamp buy --depth 18 --amount 100000
 ```
 
 ## Run react app
